@@ -8,12 +8,28 @@ def display_board():
 def playgame():
     #Display Initial Board
     display_board()
-    handleturn()
+    while gameIsOn:
+        handleturn(currentJocky)
+        checkIfGameDone()
+        chageJocky()
 def handleturn():
     position=input('Choose your position between 1-9: ')
     position=int(position)-1
     board[position]="X"
     display_board()
+def checkIfGameDone():
+    CheckWin()
+    CheckTie()
+def CheckWin():
+    #check Rows
+    #Check Columns
+    #Check Diagonals
+    return
+def CheckTie():
+    return
+def changeJocky():
+
+
 playgame()
 
 
