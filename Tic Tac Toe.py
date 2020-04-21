@@ -37,7 +37,7 @@ def handleturn(player):
             valid = True
         else:
             print("Choose different place!")
-        board[position]=player
+    board[position]=player
     display_board()
 def checkIfGameDone():
     CheckWin()
