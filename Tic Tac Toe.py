@@ -11,6 +11,9 @@ def playgame():
     handleturn()
 def handleturn():
     position=input('Choose your position between 1-9: ')
+    position=int(position)-1
+    board[position]="X"
+    display_board()
 playgame()
 
 
