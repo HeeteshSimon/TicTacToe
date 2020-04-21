@@ -112,13 +112,6 @@ def changeJocky():
     return
 
 playgame()
-
-
-
-
-
-
-
 #board
 #display board
 #play game
