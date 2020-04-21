@@ -1,6 +1,14 @@
+#Global Variables
+#Game Board
 board=['-','-','-',
        '-','-','-',
        '-','-','-']
+#Game Is not Done
+gameIsOn=True
+#Winner or Tie
+Winner=None
+#Current Player
+currentJocky="X"
 def display_board():
     print(board[0]+ '|'+board[1]+'|'+board[2])
     print(board[3] + '|' + board[4] + '|' + board[5])
@@ -11,8 +19,8 @@ def playgame():
     while gameIsOn:
         handleturn(currentJocky)
         checkIfGameDone()
-        chageJocky()
-def handleturn():
+        changeJocky()
+def handleturn(player):
     position=input('Choose your position between 1-9: ')
     position=int(position)-1
     board[position]="X"
@@ -28,7 +36,7 @@ def CheckWin():
 def CheckTie():
     return
 def changeJocky():
-
+    return
 
 playgame()
 
