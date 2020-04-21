@@ -122,3 +122,4 @@ playgame()
     #check diagonals
 #check tie
 #flip player
+#GGGGGGG
